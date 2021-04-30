@@ -1,6 +1,6 @@
 'use strict';
 
-import {drawTable, addPage, nextPage} from './tableDrawer';
+import {drawTable, addPage} from './tableDrawer';
 import {calculateWidths} from './widthCalculator';
 import {parseInput} from './inputParser';
 import {setDefaults, setupState, resetState} from './state';
@@ -101,6 +101,6 @@ jsPDF.API.autoTableAddPage = function() {
 };
 
  jsPDF.API.autoTableNextPage = function() {
-    nextPage(this);
+    addPage();
     return this;
 };
