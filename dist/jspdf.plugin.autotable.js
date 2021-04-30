@@ -939,6 +939,10 @@ jsPDF.API.autoTableAddPage = function () {
     this.addPage();
     return this;
 };
+jsPDF.API.autoTableNextPage = function () {
+    this.nextPage();
+    return this;
+};
 
 
 /***/ }),
@@ -1183,6 +1187,7 @@ function nextPage(doc) {
         doc.addPage();
     }
 }
+exports.nextPage = nextPage;
 
 
 /***/ }),
